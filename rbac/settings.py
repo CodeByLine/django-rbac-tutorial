@@ -128,5 +128,6 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Explicitly define authentication backend and the User model to use in settings.py:
-AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend']
+# AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend']
+UTHENTICATION_BACKENDS = ["rbac.core.auth.CheckPasswordBackend"]
 AUTH_USER_MODEL = 'core.User'
